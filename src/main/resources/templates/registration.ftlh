@@ -12,6 +12,7 @@
     Номер телефона: <input type="text" name="phoneNumber"><br><br>
     Пароль: <input type="password" name="password"><br><br>
     <input type="hidden" name="_csrf" value="${_csrf.token}">
+    <br>
     <input type="submit" value="Зарегистрироваться"/>
 </form>
 <#if errorMessage??>
