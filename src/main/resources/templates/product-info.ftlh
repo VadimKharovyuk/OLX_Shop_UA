@@ -14,7 +14,16 @@
 <b>Цена: </b>${product.price}<br>
 <b>Город: </b>${product.city}<br>
 <b>Автор: </b>${product.user.name}<br>
-<b>Номер телефона: </b>${product.user.phoneNumber}<br>
+<b>Номер телефона: </b>${product.user.phoneNumber}<br> <br>
+
+
+<form action="/product/delete/${product.id}" method="post">
+    <input type="hidden" name="_csrf" value="${_csrf.token}"/>
+    <button type="submit" class="btn btn-danger m-3">
+        Удалить
+    </button>
+    <br><br>
+</form>
 <form action="/" method="get">
     <input type="submit" value="Назад"/>
 </form>
