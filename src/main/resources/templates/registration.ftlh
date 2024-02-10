@@ -4,8 +4,8 @@
     <title>Adwinit Shop</title>
 </head>
 <body>
-<h1>Adwinit Shop</h1><hr>
-<h4>Регистрация</h4>
+<h1>Adwinit Shop &trade;</h1><hr>
+<h3>Регистрация</h3>
 <form action="/registration" method="post">
     Имя пользователя: <input type="text" name="name"><br><br>
     Эл. почта: <input type="email" name="email"><br><br>

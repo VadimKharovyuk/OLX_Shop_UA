@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Adwinit Shop</title>
+    <title>Adwinit Shop </title>
 </head>
 <body>
-<h1>Adwinit Shop</h1><hr>
+<h1>Adwinit Shop &trade; </h1><hr>
 <h4>Подробная информация о товаре</h4>
 <#list images as img>
-    <img src="/images/${img.id}" height="60px"/><br><br>
+    <img src="/images/${img.id}" height="320px"/><br><br>
 </#list>
 <b>Название товара: </b>${product.title}<br>
 <b>Описание товара: </b>${product.description}<br>

@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Adwinit Shop</title>
+    <title>Adwinit Shop </title>
 </head>
 <body>
-<h1>Adwinit Shop</h1><hr>
-<h4>Авторизация</h4>
+<h1>Adwinit Shop &trade;</h1><hr>
+<h3>Авторизация </h3>
 <form action="/login" method="post">
     Эл. почта: <input type="email" name="username"><br><br>
     Пароль: <input type="password" name="password"><br><br>

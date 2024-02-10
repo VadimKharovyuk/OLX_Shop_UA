@@ -4,7 +4,7 @@
     <title>Adwinit Shop</title>
 </head>
 <body>
-<h1>Adwinit Shop</h1><hr>
+<h1>Adwinit Shop &trade; </h1><hr>
 <#if user.email??>
     <h3>Имя пользователя: <i>${user.name}</i></h3>
     <form action="/logout" method="post">
@@ -15,11 +15,11 @@
     <a href="/login">Войти</a></h1>
 </#if>
 <hr>
-<h4>Товары со всей Украины </h4>
-<form action="/" method="get">
-    Поиск по названию объявления: <input type="text" name="title">
-    <input type="submit" value="Поиск"/>
-</form>
+<h2>Товары со всей Украины 🇺🇦</h2>
+<#--<form action="/" method="get">-->
+<#--    Поиск по названию объявления: <input type="text" name="title">-->
+<#--    <input type="submit" value="Поиск"/>-->
+<#--</form>-->
 <#list products as product>
     <div>
         <p><b>${product.title}</b> ${product.price} грн. | <a href="/product/${product.id}">Подробнее...</a></p>
@@ -29,7 +29,7 @@
 </#list>
 <#if user.email??>
     <hr>
-    <h3>Создать новый товар</h3>
+    <h2>Создать новый товар</h2>
     <form action="/product/create" method="post" enctype="multipart/form-data">
         Название объявления: <input type="text" name="title"/><br><br>
         Описание объявления: <input type="text" name="description"/><br><br>
