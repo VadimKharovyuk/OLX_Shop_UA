@@ -16,10 +16,7 @@
 </#if>
 <hr>
 <h2>Товары со всей Украины 🇺🇦</h2>
-<#--<form action="/" method="get">-->
-<#--    Поиск по названию объявления: <input type="text" name="title">-->
-<#--    <input type="submit" value="Поиск"/>-->
-<#--</form>-->
+
 <#list products as product>
     <div>
         <p><b>${product.title}</b> ${product.price} грн. | <a href="/product/${product.id}">Подробнее...</a></p>
